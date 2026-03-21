@@ -1,0 +1,2638 @@
+[LOG] Registered timeout rule for 1200s:
+      on-timeout: pidof hyprlock || omarchy-launch-screensaver
+      on-resume: 
+      ignore_inhibit: false
+[LOG] Registered timeout rule for 2400s:
+      on-timeout: loginctl lock-session
+      on-resume: 
+      ignore_inhibit: false
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on && brightnessctl -r
+      ignore_inhibit: false
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v2
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v2
+[LOG]    > Bound to ext_idle_notifier_v1 v2
+[LOG]   | got iface: hyprland_lock_notifier_v1 v1
+[LOG]    > Bound to hyprland_lock_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v2
+[LOG]   | got iface: xdg_wm_base v7
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_toplevel_mapping_manager_v1 v1
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_wm_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v2
+[LOG]   | got iface: hyprland_surface_manager_v1 v2
+[LOG]   | got iface: wp_content_type_manager_v1 v1
+[LOG]   | got iface: xdg_toplevel_tag_manager_v1 v1
+[LOG]   | got iface: xdg_system_bell_v1 v1
+[LOG]   | got iface: ext_workspace_manager_v1 v1
+[LOG]   | got iface: ext_data_control_manager_v1 v1
+[LOG]   | got iface: wp_pointer_warp_v1 v1
+[LOG]   | got iface: wp_fifo_manager_v1 v1
+[LOG]   | got iface: wp_commit_timing_manager_v1 v1
+[LOG]   | got iface: wp_color_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Sleep inhibition enabled - inhibiting until the wayland session gets locked
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[LOG] Inhibited sleep with fd 16
+[LOG] Registered timeout rule for 1200s:
+      on-timeout: pidof hyprlock || omarchy-launch-screensaver
+      on-resume: 
+      ignore_inhibit: false
+[LOG] Registered timeout rule for 2400s:
+      on-timeout: loginctl lock-session
+      on-resume: 
+      ignore_inhibit: false
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on && brightnessctl -r
+      ignore_inhibit: false
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v2
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v2
+[LOG]    > Bound to ext_idle_notifier_v1 v2
+[LOG]   | got iface: hyprland_lock_notifier_v1 v1
+[LOG]    > Bound to hyprland_lock_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v2
+[LOG]   | got iface: xdg_wm_base v7
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_toplevel_mapping_manager_v1 v1
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_wm_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v2
+[LOG]   | got iface: hyprland_surface_manager_v1 v2
+[LOG]   | got iface: wp_content_type_manager_v1 v1
+[LOG]   | got iface: xdg_toplevel_tag_manager_v1 v1
+[LOG]   | got iface: xdg_system_bell_v1 v1
+[LOG]   | got iface: ext_workspace_manager_v1 v1
+[LOG]   | got iface: ext_data_control_manager_v1 v1
+[LOG]   | got iface: wp_pointer_warp_v1 v1
+[LOG]   | got iface: wp_fifo_manager_v1 v1
+[LOG]   | got iface: wp_commit_timing_manager_v1 v1
+[LOG]   | got iface: wp_color_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Sleep inhibition enabled - inhibiting until the wayland session gets locked
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[ERR] Another service is already providing the org.freedesktop.ScreenSaver interface
+[ERR] Is hypridle already running?
+[LOG] Inhibited sleep with fd 16
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1337 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1338 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1339 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1340 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1341 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1342 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1343 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1344 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1345 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1346 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1347 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1348 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1349 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1350 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] Idled: rule 555ef2f2e3a0
+[LOG] Running pidof hyprlock || omarchy-launch-screensaver
+[LOG] Executing pidof hyprlock || omarchy-launch-screensaver
+[LOG] Idled: rule 5637a4b323a0
+[LOG] Running pidof hyprlock || omarchy-launch-screensaver
+[LOG] Executing pidof hyprlock || omarchy-launch-screensaver
+[LOG] Process Created with pid 170523
+[LOG] Process Created with pid 170524
+170527
+170528
+[LOG] Idled: rule 555ef2f2e3f8
+[LOG] Running loginctl lock-session
+[LOG] Idled: rule 5637a4b323f8
+[LOG] Executing loginctl lock-session
+[LOG] Running loginctl lock-session
+[LOG] Executing loginctl lock-session
+[LOG] Process Created with pid 171428
+[LOG] Process Created with pid 171429
+[LOG] Got dbus .Session
+[LOG] Got dbus .Session
+[LOG] Got Lock from dbus
+[LOG] Got Lock from dbus
+[LOG] Locking with omarchy-lock-screen
+[LOG] Locking with omarchy-lock-screen
+[LOG] Executing omarchy-lock-screen
+[LOG] Executing omarchy-lock-screen
+[LOG] Process Created with pid 171432
+[LOG] Got dbus .Session
+[LOG] Got Lock from dbus
+[LOG] Locking with omarchy-lock-screen
+[LOG] Executing omarchy-lock-screen
+[LOG] Process Created with pid 171433
+[LOG] Got dbus .Session
+[LOG] Got Lock from dbus
+[LOG] Locking with omarchy-lock-screen
+[LOG] Executing omarchy-lock-screen
+[LOG] Process Created with pid 171436
+[LOG] Process Created with pid 171437
+Terminated                 pkill -f org.omarchy.screensaver
+Terminated                 pkill -f org.omarchy.screensaver
+Hyprlock version v0.9.2
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]    > Bound to wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]    > Bound to wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]    > Bound to wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]    > Bound to wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v2
+[LOG]    > Bound to wp_cursor_shape_manager_v1 v2
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v2
+[LOG]   | got iface: hyprland_lock_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]    > Bound to ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v2
+[LOG]   | got iface: xdg_wm_base v7
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]    > Bound to zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_toplevel_mapping_manager_v1 v1
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_wm_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v2
+[LOG]   | got iface: hyprland_surface_manager_v1 v2
+[LOG]   | got iface: wp_content_type_manager_v1 v1
+[LOG]   | got iface: xdg_toplevel_tag_manager_v1 v1
+[LOG]   | got iface: xdg_system_bell_v1 v1
+[LOG]   | got iface: ext_workspace_manager_v1 v1
+[LOG]   | got iface: ext_data_control_manager_v1 v1
+[LOG]   | got iface: wp_pointer_warp_v1 v1
+[LOG]   | got iface: wp_fifo_manager_v1 v1
+[LOG]   | got iface: wp_commit_timing_manager_v1 v1
+[LOG]   | got iface: wp_color_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]    > Bound to zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]    > Bound to wl_output v4
+[LOG] Exposed seat name: Hyprland
+[LOG] [core] dmabufFeedbackMainDevice
+[LOG] output DP-1 name DP-1
+[LOG] output 64 description LG Electronics LG ULTRAGEAR 0x000569B3 (DP-1)
+[LOG] output 64 make LG Electronics model LG ULTRAGEAR
+[LOG] output 64 done
+[LOG] Skipping screencopy
+[LOG] Running on Hyprland
+[LOG] Resources gathered after 45 milliseconds
+[LOG] Locking session
+[LOG] Starting fade in
+[WARN] fprint: couldn't connect to Fprint service ([org.freedesktop.DBus.Error.ServiceUnknown] The name is not activatable)
+[LOG] Got fractional scale: 100.0%
+[LOG[LOG] Wayland session got locked
+[LOG] Releasing the sleep inhibitor!
+[LOG] Wayland session got locked
+[LOG] Releasing the sleep inhibitor!
+Hyprlock version v0.9.2
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]    > Bound to wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]    > Bound to wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]    > Bound to wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]    > Bound to wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v2
+[LOG]    > Bound to wp_cursor_shape_manager_v1 v2
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v2
+[LOG]   | got iface: hyprland_lock_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]    > Bound to ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v2
+[LOG]   | got iface: xdg_wm_base v7
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]    > Bound to zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_toplevel_mapping_manager_v1 v1
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_wm_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v2
+[LOG]   | got iface: hyprland_surface_manager_v1 v2
+[LOG]   | got iface: wp_content_type_manager_v1 v1
+[LOG]   | got iface: xdg_toplevel_tag_manager_v1 v1
+[LOG]   | got iface: xdg_system_bell_v1 v1
+[LOG]   | got iface: ext_workspace_manager_v1 v1
+[LOG]   | got iface: ext_data_control_manager_v1 v1
+[LOG]   | got iface: wp_pointer_warp_v1 v1
+[LOG]   | got iface: wp_fifo_manager_v1 v1
+[LOG]   | got iface: wp_commit_timing_manager_v1 v1
+[LOG]   | got iface: wp_color_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]    > Bound to zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]    > Bound to wl_output v4
+[LOG] Exposed seat name: Hyprland
+[LOG] [core] dmabufFeedbackMainDevice
+[LOG] output DP-1 name DP-1
+[LOG] output 64 description LG Electronics LG ULTRAGEAR 0x000569B3 (DP-1)
+[LOG] output 64 make LG Electronics model LG ULTRAGEAR
+[LOG] output 64 done
+[LOG] Skipping screencopy
+[LOG] Running on Hyprland
+[LOG] Resources gathered after 47 milliseconds
+[LOG] Locking session
+[LOG] onLockFinished called. Seems we got yeeten. Is another lockscreen running?
+Hyprlock version v0.9.2
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]    > Bound to wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]    > Bound to wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]    > Bound to wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]    > Bound to wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v2
+[LOG]    > Bound to wp_cursor_shape_manager_v1 v2
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v2
+[LOG]   | got iface: hyprland_lock_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]    > Bound to ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v2
+[LOG]   | got iface: xdg_wm_base v7
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]    > Bound to zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_toplevel_mapping_manager_v1 v1
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_wm_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v2
+[LOG]   | got iface: hyprland_surface_manager_v1 v2
+[LOG]   | got iface: wp_content_type_manager_v1 v1
+[LOG]   | got iface: xdg_toplevel_tag_manager_v1 v1
+[LOG]   | got iface: xdg_system_bell_v1 v1
+[LOG]   | got iface: ext_workspace_manager_v1 v1
+[LOG]   | got iface: ext_data_control_manager_v1 v1
+[LOG]   | got iface: wp_pointer_warp_v1 v1
+[LOG]   | got iface: wp_fifo_manager_v1 v1
+[LOG]   | got iface: wp_commit_timing_manager_v1 v1
+[LOG]   | got iface: wp_color_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]    > Bound to zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]    > Bound to wl_output v4
+[LOG] Exposed seat name: Hyprland
+[LOG] [core] dmabufFeedbackMainDevice
+[LOG] output DP-1 name DP-1
+[LOG] output 64 description LG Electronics LG ULTRAGEAR 0x000569B3 (DP-1)
+[LOG] output 64 make LG Electronics model LG ULTRAGEAR
+[LOG] output 64 done
+[LOG] Skipping screencopy
+[LOG] Running on Hyprland
+[LOG] Resources gathered after 49 milliseconds
+[LOG] Locking session
+[LOG] onLockFinished called. Seems we got yeeten. Is another lockscreen running?
+Hyprlock version v0.9.2
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]    > Bound to wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]    > Bound to wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]    > Bound to wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]    > Bound to wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v2
+[LOG]    > Bound to wp_cursor_shape_manager_v1 v2
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v2
+[LOG]   | got iface: hyprland_lock_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]    > Bound to ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v2
+[LOG]   | got iface: xdg_wm_base v7
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]    > Bound to zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_toplevel_mapping_manager_v1 v1
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_wm_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v2
+[LOG]   | got iface: hyprland_surface_manager_v1 v2
+[LOG]   | got iface: wp_content_type_manager_v1 v1
+[LOG]   | got iface: xdg_toplevel_tag_manager_v1 v1
+[LOG]   | got iface: xdg_system_bell_v1 v1
+[LOG]   | got iface: ext_workspace_manager_v1 v1
+[LOG]   | got iface: ext_data_control_manager_v1 v1
+[LOG]   | got iface: wp_pointer_warp_v1 v1
+[LOG]   | got iface: wp_fifo_manager_v1 v1
+[LOG]   | got iface: wp_commit_timing_manager_v1 v1
+[LOG]   | got iface: wp_color_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]    > Bound to zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]    > Bound to wl_output v4
+[LOG] Exposed seat name: Hyprland
+[LOG] [core] dmabufFeedbackMainDevice
+[LOG] output DP-1 name DP-1
+[LOG] output 64 description LG Electronics LG ULTRAGEAR 0x000569B3 (DP-1)
+[LOG] output 64 make LG Electronics model LG ULTRAGEAR
+[LOG] output 64 done
+[LOG] Skipping screencopy
+[LOG] Running on Hyprland
+[LOG] Resources gathered after 48 milliseconds
+[LOG] Locking session
+[LOG] onLockFinished called. Seems we got yeeten. Is another lockscreen running?
+/home/nagarete/.local/share/omarchy/bin/omarchy-lock-screen: line 6: 171455 Segmentation fault         (core dumped) hyprlock
+/home/nagarete/.local/share/omarchy/bin/omarchy-lock-screen: line 6: 171457 Segmentation fault         (core dumped) hyprlock
+/home/nagarete/.local/share/omarchy/bin/omarchy-lock-screen: line 6: 171456 Segmentation fault         (core dumped) hyprlock
+[LOG] Resumed: rule 555ef2f2e3a0
+[LOG] Ignoring, onRestore is empty.
+[LOG] Resumed: rule 555ef2f2e3f8
+[LOG] Ignoring, onRestore is empty.
+[LOG] Resumed: rule 5637a4b323a0
+[LOG] Ignoring, onRestore is empty.
+[LOG] Resumed: rule 5637a4b323f8
+[LOG] Ignoring, onRestore is empty.
+[LOG] Wayland session got unlocked
+[LOG] Wayland session got unlocked
+[LOG] Inhibited sleep with fd 16
+[LOG] Inhibited sleep with fd 16
+] configure with serial 90078
+[LOG] Configuring surface for logical [Vector2D: x: 1920, y: 1080] and pixel [Vector2D: x: 1920, y: 1080]
+[LOG] Missing screenshot for output DP-1
+[LOG] onLockLocked called
+[LOG] Authenticating
+[LOG] PAM_PROMPT: Password: 
+[ERR] auth: Authentication failed for hyprlock
+[LOG] Failed attempts: 1
+[LOG] Authenticating
+[LOG] PAM_PROMPT: Password: 
+[LOG] auth: authenticated for hyprlock
+[LOG] Unlocking session
+[LOG] Unlocked, exiting!
+[LOG] Reached the end, exiting
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1351 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1352 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1353 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1354 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1355 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1356 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1357 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1358 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1359 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1360 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1361 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1362 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1363 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1364 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1365 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1366 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1367 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1368 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1369 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1370 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1371 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1372 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1373 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1374 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1375 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1376 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1377 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1378 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1379 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1380 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1381 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1382 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1383 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1384 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1385 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1386 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1387 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1388 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1389 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1390 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1391 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1392 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1393 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1394 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1395 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1396 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1397 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1398 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1399 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1400 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1401 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1402 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1403 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1404 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1405 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1406 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1407 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1408 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1409 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1410 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1411 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1412 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1413 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1414 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1415 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1416 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1417 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1418 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1419 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1420 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] systemd idle inhibit active
+[LOG] systemd idle inhibit active
+[LOG] Inhibit locks: 1
+[LOG] Inhibit locks: 1
+[LOG] systemd idle inhibit inactive
+[LOG] systemd idle inhibit inactive
+[LOG] Inhibit locks: 0
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1421 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1422 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1423 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1424 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1425 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1426 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1427 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1428 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1429 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1430 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1431 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1432 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1433 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1434 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1435 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1436 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1437 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1438 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1439 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1440 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1441 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1442 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1443 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1444 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1445 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1446 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1447 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1448 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1449 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1450 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1451 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1452 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1453 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1454 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1455 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1456 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1457 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1458 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1459 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1460 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1461 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1462 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1463 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from localsend_app (owner: :1.822) with content wakelock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1464 sent
+[LOG] ScreenSaver inhibit: false dbus message from localsend_app (owner: :1.822) with content wakelock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1465 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1466 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1467 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] systemd idle inhibit active
+[LOG] Inhibit locks: 1
+[LOG] systemd idle inhibit active
+[LOG] Inhibit locks: 1
+[LOG] systemd idle inhibit inactive
+[LOG] systemd idle inhibit inactive
+[LOG] Inhibit locks: 0
+[LOG] Inhibit locks: 0
+[LOG] systemd idle inhibit active
+[LOG] systemd idle inhibit active
+[LOG] Inhibit locks: 1
+[LOG] Inhibit locks: 1
+[LOG] systemd idle inhibit inactive
+[LOG] Inhibit locks: 0
+[LOG] systemd idle inhibit inactive
+[LOG] Inhibit locks: 0
+[LOG] systemd idle inhibit active
+[LOG] Inhibit locks: 1
+[LOG] systemd idle inhibit active
+[LOG] Inhibit locks: 1
+[LOG] systemd idle inhibit inactive
+[LOG] systemd idle inhibit inactive
+[LOG] Inhibit locks: 0
+[LOG] Inhibit locks: 0
+[LOG] systemd idle inhibit active
+[LOG] systemd idle inhibit active
+[LOG] Inhibit locks: 1
+[LOG] Inhibit locks: 1
+[LOG] systemd idle inhibit inactive
+[LOG] Inhibit locks: 0
+[LOG] systemd idle inhibit inactive
+[LOG] Inhibit locks: 0
+[LOG] systemd idle inhibit active
+[LOG] Inhibit locks: 1
+[LOG] systemd idle inhibit active
+[LOG] Inhibit locks: 1
+[LOG] systemd idle inhibit inactive
+[LOG] Inhibit locks: 0
+[LOG] systemd idle inhibit inactive
+[LOG] Inhibit locks: 0
+[LOG] systemd idle inhibit active
+[LOG] systemd idle inhibit active
+[LOG] Inhibit locks: 1
+[LOG] Inhibit locks: 1
+[LOG] systemd idle inhibit inactive
+[LOG] Inhibit locks: 0
+[LOG] systemd idle inhibit inactive
+[LOG] Inhibit locks: 0
+[LOG] Got PrepareForSleep from dbus with sleep true
+[LOG] Executing loginctl lock-session
+[LOG] Got PrepareForSleep from dbus with sleep true
+[LOG] Executing loginctl lock-session
+[LOG] Process Created with pid 191591
+[LOG] Process Created with pid 191592
+[LOG] Got dbus .Session
+[LOG] Got Lock from dbus
+[LOG] Locking with omarchy-lock-screen
+[LOG] Executing omarchy-lock-screen
+[LOG] Got dbus .Session
+[LOG] Got Lock from dbus
+[LOG] Locking with omarchy-lock-screen
+[LOG] Executing omarchy-lock-screen
+[LOG] Process Created with pid 191596
+[LOG] Got dbus .Session
+[LOG] Got Lock from dbus
+[LOG] Locking with omarchy-lock-screen
+[LOG] Executing omarchy-lock-screen
+[LOG] Process Created with pid 191597
+[LOG] Got dbus .Session
+[LOG] Got Lock from dbus
+[LOG] Locking with omarchy-lock-screen
+[LOG] Executing omarchy-lock-screen
+[LOG] Process Created with pid 191600
+[LOG] Process Created with pid 191601
+Terminated                 pkill -f org.omarchy.screensaver
+Terminated                 pkill -f org.omarchy.screensaver
+Terminated                 pkill -f org.omarchy.screensaver
+Hyprlock version v0.9.2
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]    > Bound to wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]    > Bound to wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]    > Bound to wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]    > Bound to wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v2
+[LOG]    > Bound to wp_cursor_shape_manager_v1 v2
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v2
+[LOG]   | got iface: hyprland_lock_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]    > Bound to ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v2
+[LOG]   | got iface: xdg_wm_base v7
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]    > Bound to zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_toplevel_mapping_manager_v1 v1
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_wm_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v2
+[LOG]   | got iface: hyprland_surface_manager_v1 v2
+[LOG]   | got iface: wp_content_type_manager_v1 v1
+[LOG]   | got iface: xdg_toplevel_tag_manager_v1 v1
+[LOG]   | got iface: xdg_system_bell_v1 v1
+[LOG]   | got iface: ext_workspace_manager_v1 v1
+[LOG]   | got iface: ext_data_control_manager_v1 v1
+[LOG]   | got iface: wp_pointer_warp_v1 v1
+[LOG]   | got iface: wp_fifo_manager_v1 v1
+[LOG]   | got iface: wp_commit_timing_manager_v1 v1
+[LOG]   | got iface: wp_color_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]    > Bound to zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]    > Bound to wl_output v4
+[LOG] Exposed seat name: Hyprland
+[LOG] [core] dmabufFeedbackMainDevice
+[LOG] output DP-1 name DP-1
+[LOG] output 64 description LG Electronics LG ULTRAGEAR 0x000569B3 (DP-1)
+[LOG] output 64 make LG Electronics model LG ULTRAGEAR
+[LOG] output 64 done
+[LOG] Skipping screencopy
+[LOG] Running on Hyprland
+[LOG] Resources gathered after 55 milliseconds
+[LOG] Locking session
+[LOG] Starting fade in
+[LOG] Got fractional scale: 100.0%
+[LOG] configure with serial 98525
+[LOG] Configuring surface for logical [Vector2D: x: 1920, y: 1080] and pixel [Vector2D: x: 192Hyprlock version v0.9.2
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]    > Bound to wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]    > Bound to wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]    > Bound to wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]    > Bound to wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v2
+[LOG]    > Bound to wp_cursor_shape_manager_v1 v2
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v2
+[LOG]   | got iface: hyprland_lock_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]    > Bound to ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v2
+[LOG]   | got iface: xdg_wm_base v7
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]    > Bound to zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_toplevel_mapping_manager_v1 v1
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_wm_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v2
+[LOG]   | got iface: hyprland_surface_manager_v1 v2
+[LOG]   | got iface: wp_content_type_manager_v1 v1
+[LOG]   | got iface: xdg_toplevel_tag_manager_v1 v1
+[LOG]   | got iface: xdg_system_bell_v1 v1
+[LOG]   | got iface: ext_workspace_manager_v1 v1
+[LOG]   | got iface: ext_data_control_manager_v1 v1
+[LOG]   | got iface: wp_pointer_warp_v1 v1
+[LOG]   | got iface: wp_fifo_manager_v1 v1
+[LOG]   | got iface: wp_commit_timing_manager_v1 v1
+[LOG]   | got iface: wp_color_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]    > Bound to zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]    > Bound to wl_output v4
+[LOG] Exposed seat name: Hyprland
+[LOG] [core] dmabufFeedbackMainDevice
+[LOG] output DP-1 name DP-1
+[LOG] output 64 description LG Electronics LG ULTRAGEAR 0x000569B3 (DP-1)
+[LOG] output 64 make LG Electronics model LG ULTRAGEAR
+[LOG] output 64 done
+[LOG] Skipping screencopy
+[LOG] Running on Hyprland
+[LOG] Resources gathered after 57 milliseconds
+[LOG] Locking session
+[LOG] onLockFinished called. Seems we got yeeten. Is another lockscreen running?
+Hyprlock version v0.9.2
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]    > Bound to wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]    > Bound to wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]    > Bound to wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]    > Bound to wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v2
+[LOG]    > Bound to wp_cursor_shape_manager_v1 v2
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v2
+[LOG]   | got iface: hyprland_lock_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]    > Bound to ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v2
+[LOG]   | got iface: xdg_wm_base v7
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]    > Bound to zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_toplevel_mapping_manager_v1 v1
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_wm_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v2
+[LOG]   | got iface: hyprland_surface_manager_v1 v2
+[LOG]   | got iface: wp_content_type_manager_v1 v1
+[LOG]   | got iface: xdg_toplevel_tag_manager_v1 v1
+[LOG]   | got iface: xdg_system_bell_v1 v1
+[LOG]   | got iface: ext_workspace_manager_v1 v1
+[LOG]   | got iface: ext_data_control_manager_v1 v1
+[LOG]   | got iface: wp_pointer_warp_v1 v1
+[LOG]   | got iface: wp_fifo_manager_v1 v1
+[LOG]   | got iface: wp_commit_timing_manager_v1 v1
+[LOG]   | got iface: wp_color_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]    > Bound to zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]    > Bound to wl_output v4
+[LOG] Exposed seat name: Hyprland
+[LOG] [core] dmabufFeedbackMainDevice
+[LOG] output DP-1 name DP-1
+[LOG] output 64 description LG Electronics LG ULTRAGEAR 0x000569B3 (DP-1)
+[LOG] output 64 make LG Electronics model LG ULTRAGEAR
+[LOG] output 64 done
+[LOG] Skipping screencopy
+[LOG] Running on Hyprland
+[LOG] Resources gathered after 57 milliseconds
+[LOG] Locking session
+[LOG] onLockFinished called. Seems we got yeeten. Is another lockscreen running?
+Hyprlock version v0.9.2
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]    > Bound to wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]    > Bound to wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]    > Bound to wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]    > Bound to wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v2
+[LOG]    > Bound to wp_cursor_shape_manager_v1 v2
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v2
+[LOG]   | got iface: hyprland_lock_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]    > Bound to ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v2
+[LOG]   | got iface: xdg_wm_base v7
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]    > Bound to zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_toplevel_mapping_manager_v1 v1
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_wm_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v2
+[LOG]   | got iface: hyprland_surface_manager_v1 v2
+[LOG]   | got iface: wp_content_type_manager_v1 v1
+[LOG]   | got iface: xdg_toplevel_tag_manager_v1 v1
+[LOG]   | got iface: xdg_system_bell_v1 v1
+[LOG]   | got iface: ext_workspace_manager_v1 v1
+[LOG]   | got iface: ext_data_control_manager_v1 v1
+[LOG]   | got iface: wp_pointer_warp_v1 v1
+[LOG]   | got iface: wp_fifo_manager_v1 v1
+[LOG]   | got iface: wp_commit_timing_manager_v1 v1
+[LOG]   | got iface: wp_color_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]    > Bound to zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]    > Bound to wl_output v4
+[LOG] Exposed seat name: Hyprland
+[LOG] [core] dmabufFeedbackMainDevice
+[LOG] output DP-1 name DP-1
+[LOG] output 64 description LG Electronics LG ULTRAGEAR 0x000569B3 (DP-1)
+[LOG] output 64 make LG Electronics model LG ULTRAGEAR
+[LOG] output 64 done
+[LOG] Skipping screencopy
+[LOG] Running on Hyprland
+[LOG] Resources gathered after 59 milliseconds
+[LOG] Locking session
+[LOG] onLockFinished called. Seems we got yeeten. Is another lockscreen running?
+[LOG] Wayland session got locked
+[LOG] Wayland session got locked
+[LOG] Releasing the sleep inhibitor!
+[LOG] Releasing the sleep inhibitor!
+/home/nagarete/.local/share/omarchy/bin/omarchy-lock-screen: line 6: 191629 Segmentation fault         (core dumped) hyprlock
+/home/nagarete/.local/share/omarchy/bin/omarchy-lock-screen: line 6: 191628 Segmentation fault         (core dumped) hyprlock
+/home/nagarete/.local/share/omarchy/bin/omarchy-lock-screen: line 6: 191630 Segmentation fault         (core dumped) hyprlock
+[LOG] Got PrepareForSleep from dbus with sleep false
+[LOG] Executing hyprctl dispatch dpms on
+[LOG] Got PrepareForSleep from dbus with sleep false
+[LOG] Executing hyprctl dispatch dpms on
+[LOG] Process Created with pid 191881
+[LOG] Process Created with pid 191880
+ok
+ok
+[LOG] Wayland session got unlocked
+[LOG] Wayland session got unlocked
+[LOG] Inhibited sleep with fd 16
+[LOG] Inhibited sleep with fd 16
+0, y: 1080]
+[LOG] Missing screenshot for output DP-1
+[LOG] onLockLocked called
+[LOG] fprint: PrepareForSleep (start: false)
+[WARN] fprint: couldn't connect to Fprint service ([org.freedesktop.DBus.Error.ServiceUnknown] The name is not activatable)
+[LOG] output 64 make LG Electronics model LG ULTRAGEAR
+[LOG] output 64 done
+[LOG] configure with serial 98530
+[LOG] Configuring surface for logical [Vector2D: x: 1920, y: 1080] and pixel [Vector2D: x: 1920, y: 1080]
+[LOG] output 64 done
+[LOG] output 64 make LG Electronics model LG ULTRAGEAR
+[LOG] output 64 done
+[LOG] configure with serial 98531
+[LOG] Configuring surface for logical [Vector2D: x: 1920, y: 1080] and pixel [Vector2D: x: 1920, y: 1080]
+[LOG] output 64 done
+[ERR] Invalid key down event (stray release event?)
+[LOG] Authenticating
+[LOG] PAM_PROMPT: Password: 
+[LOG] auth: authenticated for hyprlock
+[LOG] Unlocking session
+[LOG] Unlocked, exiting!
+[LOG] Reached the end, exiting
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1468 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1469 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1470 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1471 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1472 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1473 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1474 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1475 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1476 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1477 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1478 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1479 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1480 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1481 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1482 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1483 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1484 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1485 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1486 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1487 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1488 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1489 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1490 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1491 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1492 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1493 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1494 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1495 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1496 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1497 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1498 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1499 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1500 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1501 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1502 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1503 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1504 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1505 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1506 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1507 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1508 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1509 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1510 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1511 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1512 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1513 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1514 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1515 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1516 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1517 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1518 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1519 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1520 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1521 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1522 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1523 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1524 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1525 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1526 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1527 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1528 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1529 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1530 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1531 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1532 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1533 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1534 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1535 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1536 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1537 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1538 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1539 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1540 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1541 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1542 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1543 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1544 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1545 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1546 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1547 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1548 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1549 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1550 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1551 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1552 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1553 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1554 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1555 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1556 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1557 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1558 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1559 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1560 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1561 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1562 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1563 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1564 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1565 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1566 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1567 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1568 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1569 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1570 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1571 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1572 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1573 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1574 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1575 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1576 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1577 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1578 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1579 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1580 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1581 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1582 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1583 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1584 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1585 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1586 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1587 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1588 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1589 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1590 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1591 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1592 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1593 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1594 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1595 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1596 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1597 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1598 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1599 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1600 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1601 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1602 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1603 sent
+[LOG] ScreenSaver inhibit: false dbus message from /opt/google/chrome/google-chrome (owner: :1.238) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1604 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1605 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1606 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1607 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1608 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1609 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1610 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1611 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1612 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1613 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1614 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1615 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1616 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1617 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1618 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1619 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1620 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1621 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1622 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1623 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1624 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1625 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1626 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1627 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1628 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1629 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1630 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1631 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1632 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1633 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1634 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1635 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1636 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1637 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1638 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1639 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1640 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1641 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1642 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1643 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1644 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1645 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1646 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1647 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1648 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1649 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from LibreOffice 25.8 (owner: :1.856) with content presentation
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1650 sent
+[LOG] ScreenSaver inhibit: false dbus message from LibreOffice 25.8 (owner: :1.856) with content presentation
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from LibreOffice 25.8 (owner: :1.856) with content presentation
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1651 sent
+[LOG] ScreenSaver inhibit: false dbus message from LibreOffice 25.8 (owner: :1.856) with content presentation
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1652 sent
+[LOG] ScreenSaver inhibit: true dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1653 sent
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing video
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from zen (owner: :1.120) with content Playing audio
+[LOG] Inhibit locks: 0
+[CRITICAL] [core] Disconnected from pollfd id 1
+[CRITICAL] [core] Disconnected from pollfd id 1
