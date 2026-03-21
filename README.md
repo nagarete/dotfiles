@@ -2,61 +2,26 @@
 
 Managed with [GNU Stow](https://www.gnu.org/software/stow/).
 
-## What Went Wrong Last Time
-
-**Problem:** Keybindings stopped working after cloning dotfiles to a new system.
-
-**Root Cause:** Syntax errors in `~/.config/hypr/bindings.conf`:
-
-```conf
-# WRONG - all lines use 'h' key instead of h/j/k/l:
-bindd = SUPER SHIFT, h, Swap window to the left, swapwindow,l
-bindd = SUPER SHIFT, l, Swap window to the right, swapwindow,l
-bindd = SUPER SHIFT, h, Swap window to the up, swapwindow,u     # Wrong key!
-bindd = SUPER SHIFT, h, Swap window to the down, swapwindow,d   # Wrong key!
-
-# FIXED:
-bindd = SUPER SHIFT, h, Swap window to the left, swapwindow, l
-bindd = SUPER SHIFT, l, Swap window to the right, swapwindow, r
-bindd = SUPER SHIFT, k, Swap window to the up, swapwindow, u
-bindd = SUPER SHIFT, j, Swap window to the down, swapwindow, d
-```
-
-**Lesson:** Always validate configs with `hyprctl reload` before committing.
-
----
-
 ## Quick Start (New System)
 
 ```bash
-# 1. Install stow
-sudo pacman -S stow
-
-# 2. Clone your dotfiles
+# 1. Clone and run install script
 cd ~
 git clone git@github.com:nagarete/dotfiles.git
+cd dotfiles
+./install.sh
+```
 
-# 3. Backup existing configs (optional but recommended)
-mkdir -p ~/dotfiles_backup
-cp ~/.zshrc ~/dotfiles_backup/ 2>/dev/null
-cp ~/.bashrc ~/dotfiles_backup/ 2>/dev/null
-cp -r ~/.config/hypr ~/dotfiles_backup/ 2>/dev/null
+The install script will:
+- Backup existing configs to `~/dotfiles_backup/`
+- Remove conflicting configs
+- Create symlinks with stow
+- Validate Hyprland config
 
-# 4. Remove existing configs that conflict with dotfiles
-rm -f ~/.zshrc ~/.bashrc ~/.bash_profile ~/.bash_logout
-rm -f ~/.config/starship.toml
-rm -rf ~/.config/hypr ~/.config/waybar ~/.config/kitty ~/.config/nvim \
-       ~/.config/tmux ~/.config/zellij ~/.config/walker ~/.config/mako \
-       ~/.config/btop ~/.config/alacritty ~/.config/ghostty ~/.config/micro \
-       ~/.config/fastfetch
-
-# 5. Stow all packages (creates symlinks)
+**Or manually:**
+```bash
 cd ~/dotfiles
 stow */
-
-# 6. Verify symlinks are working
-ls -la ~ | grep dotfiles
-ls -la ~/.config/ | grep dotfiles
 ```
 
 ## How to Update Configs
@@ -168,110 +133,50 @@ Each directory represents a "package" that can be stowed independently.
 - **Backup**: Always backup before setting up on a new system
 - **Git submodules**: Avoid using git submodules inside dotfiles - they cause issues with stow
 
-## Omarchy-Specific Notes
+## Omarchy Notes
 
-These dotfiles are designed for [Omarchy](https://omarchy.org/) - an Arch Linux distribution with Hyprland.
+These dotfiles are designed for [Omarchy](https://omarchy.org/) (Arch Linux + Hyprland).
 
-### How Hyprland Config Works in Omarchy
+### Hyprland Config Layers
 
-Omarchy uses a layered config system:
+Configs load in this order (later overrides earlier):
+1. System defaults (`~/.local/share/omarchy/default/hypr/`)
+2. Theme configs (`~/.config/omarchy/current/theme/`)
+3. **Your configs** (`~/.config/hypr/`)
 
-1. **System defaults** (`~/.local/share/omarchy/default/hypr/`) - DON'T EDIT THESE
-2. **Theme configs** (`~/.config/omarchy/current/theme/`) - Theme-specific settings
-3. **User configs** (`~/.config/hypr/`) - YOUR CUSTOMIZATIONS GO HERE
+### Keybinding Rules
 
-The main `hyprland.conf` sources files in this order:
-- First: Omarchy defaults (bindings, media keys, env vars, etc.)
-- Last: Your user configs (can override anything)
-
-### Keybinding Overrides
-
-When overriding Omarchy's default keybindings, you MUST use `unbind` first:
+When overriding defaults, use `unbind` first:
 
 ```conf
-# WRONG - will cause conflicts:
-bind = SUPER, SPACE, exec, my-app
-
-# CORRECT - unbind first, then bind:
 unbind = SUPER, SPACE
 bind = SUPER, SPACE, exec, my-app
 ```
 
-Check existing bindings before overriding:
+Check existing bindings:
 ```bash
 omarchy-menu-keybindings --print | grep "SUPER + SPACE"
 ```
 
-### Validating Hyprland Config
-
-Always validate before committing:
+### Validate Config
 
 ```bash
-# Check for syntax errors
-hyprctl reload
-
-# If you see "ok", config is valid
-# If you see errors, fix them before committing
-
-# List all active bindings
-hyprctl binds
-
-# Check specific binding
-hyprctl binds | grep -A5 "key: h"
+hyprctl reload      # Should print "ok"
+hyprctl binds       # List all bindings
 ```
-
-Common syntax errors to avoid:
-- Typos in key names (`SUPER SHIFT, h` vs `SUPER SHIFT, j`)
-- Missing commas or wrong argument order
-- Duplicate keybindings without `unbind`
 
 ## Troubleshooting
 
-### Config changes not applying?
-```bash
-stow -R */  # Restow everything
+| Problem | Solution |
+|---------|----------|
+| Changes not applying | `stow -R */` |
+| Broken symlink | `rm ~/.config/broken && stow config` |
+| See what stow will do | `stow -n -v */` |
+| Keybindings not working | `hyprctl reload` should print "ok" |
+| Check bindings | `omarchy-menu-keybindings --print` |
+
+**Forgot to unbind?**
+```conf
+unbind = SUPER, KEY
+bind = SUPER, KEY, action
 ```
-
-### Symlink broken?
-```bash
-# Remove broken link and restow
-rm ~/.config/broken-link
-stow config
-```
-
-### Want to see what stow will do?
-```bash
-stow -n -v */  # Dry run with verbose output
-```
-
-### Keybindings not working?
-
-1. **Check if Hyprland loaded your config:**
-   ```bash
-   hyprctl reload
-   # Should print "ok"
-   ```
-
-2. **Verify bindings are loaded:**
-   ```bash
-   omarchy-menu-keybindings --print
-   ```
-
-3. **Check for conflicts:**
-   ```bash
-   hyprctl binds | grep "key: SPACE"
-   # Look for duplicate bindings
-   ```
-
-4. **Common issue - forgot to unbind:**
-   If overriding a default Omarchy binding, you need:
-   ```conf
-   unbind = SUPER, KEY
-   bind = SUPER, KEY, action
-   ```
-
-5. **Syntax error in bindings.conf:**
-   Check line-by-line for typos, especially:
-   - Wrong keys (`h` instead of `j`)
-   - Missing spaces after commas
-   - Wrong argument order
