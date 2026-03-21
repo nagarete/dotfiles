@@ -1,0 +1,6 @@
+# Stow configuration file
+# Ignore common non-config files
+--ignore=.git
+--ignore=.gitignore
+--ignore=README.md
+--ignore=install.sh
