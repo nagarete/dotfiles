@@ -18,7 +18,8 @@ rm -f ~/.config/starship.toml
 rm -rf ~/.config/hypr ~/.config/waybar ~/.config/kitty ~/.config/nvim \
        ~/.config/tmux ~/.config/zellij ~/.config/walker ~/.config/mako \
        ~/.config/btop ~/.config/alacritty ~/.config/ghostty ~/.config/micro \
-       ~/.config/fastfetch ~/.config/lazydocker ~/.config/lazygit
+       ~/.config/fastfetch ~/.config/lazydocker ~/.config/lazygit \
+       ~/.config/opencode ~/.agents/skills
 
 stow */
 

@@ -120,7 +120,11 @@ stow -n -v */
 │       ├── nvim/
 │       ├── tmux/
 │       ├── zellij/
+│       ├── opencode/
 │       └── ...
+├── agents/        → ~/.agents/ contents (user skills)
+│   └── .agents/
+│       └── skills/
 └── nvim/          → ~/.config/nvim (separate package)
 ```
 

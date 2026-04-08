@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "skills": {
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "c2f31172b6f256272305a5e6e7228b258446899f",
+      "installedAt": "2026-02-19T02:51:27.553Z",
+      "updatedAt": "2026-02-19T02:51:27.553Z"
+    },
+    "create-slash-commands": {
+      "source": "glittercowboy/taches-cc-resources",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/glittercowboy/taches-cc-resources.git",
+      "skillPath": "skills/create-slash-commands/SKILL.md",
+      "skillFolderHash": "9ef8e4561dc28fc01330c80870b03737f6037779",
+      "installedAt": "2026-02-19T06:35:20.814Z",
+      "updatedAt": "2026-02-19T06:35:20.814Z"
+    },
+    "omarchy": {
+      "source": "basecamp/omarchy",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/basecamp/omarchy.git",
+      "skillPath": "default/omarchy-skill/SKILL.md",
+      "skillFolderHash": "cbaddcb9d6d50abe5fcc7758acdf4d54100be17c",
+      "installedAt": "2026-02-20T05:35:22.401Z",
+      "updatedAt": "2026-02-20T05:35:22.401Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "codex",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode"
+  ]
+}

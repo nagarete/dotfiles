@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
+  "agents": {
+    "sisyphus": {},
+    "hephaestus": {},
+    "oracle": {},
+    "librarian": {},
+    "explore": {},
+    "multimodal-looker": {},
+    "prometheus": {},
+    "metis": {},
+    "momus": {},
+    "atlas": {}
+  },
+  "categories": {
+    "visual-engineering": {},
+    "ultrabrain": {},
+    "deep": {},
+    "artistry": {},
+    "quick": {},
+    "unspecified-low": {},
+    "unspecified-high": {},
+    "writing": {}
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
+  
+  "agents": {
+    "sisyphus": {
+      "model": "opencode-go/kimi-k2.5",
+      "ultrawork": { "model": "opencode-go/kimi-k2.5" }
+    },
+    "prometheus": { 
+      "model": "opencode-go/kimi-k2.5"
+    },
+    "atlas": { 
+      "model": "opencode-go/kimi-k2.5" 
+    },
+    "metis": { 
+      "model": "opencode-go/kimi-k2.5" 
+    },
+    "explore": { 
+      "model": "opencode-go/minimax-m2.7" 
+      // "model": "opencode/minimax-m2.5-free" 
+      // "model": "zen/minimax-m2.5" 
+    },
+    "librarian": { 
+      "model": "opencode-go/minimax-m2.7" 
+      // "model": "zen/minimax-m2.5" 
+    },
+    "oracle": { 
+      "model": "opencode-go/kimi-k2.5",
+      "variant": "high"
+    },
+    "momus": { 
+      "model": "opencode-go/kimi-k2.5" 
+    },
+    "multimodal-looker": { 
+      "model": "opencode-go/kimi-k2.5" 
+    }//,
+    // "hephaestus": { 
+    //   "model": "opencode-go/minimax-m2.5",
+    //   "_comment": "Fallback only - designed for GPT-5.3 Codex, degraded performance expected"
+    // }
+  },
+  "categories": {
+    "visual-engineering": { 
+      "model": "opencode-go/kimi-k2.5",
+      "variant": "high"
+    },
+    "artistry": { 
+      "model": "opencode-go/kimi-k2.5" 
+    },
+    "ultrabrain": { 
+      "model": "opencode-go/kimi-k2.5",
+      "variant": "high"
+    },
+    "deep": { 
+      "model": "opencode-go/kimi-k2.5",
+      "fallback": "opencode-go/kimi-k2.5"
+    },
+    "quick": { 
+      "model": "opencode-go/minimax-m2.7" 
+      // "model": "zen/minimax-m2.5" 
+    },
+    "unspecified-low": { 
+      "model": "opencode-go/minimax-m2.7" 
+      // "model": "zen/minimax-m2.5" 
+    },
+    "unspecified-high": { 
+      "model": "opencode-go/kimi-k2.5" 
+    },
+    "writing": { 
+      "model": "opencode-go/kimi-k2.5",
+      "fallback": "opencode-go/kimi-k2.5"
+    }
+  },
+  "background_task": {
+    "providerConcurrency": { 
+      "opencode-go": 10
+    },
+    "modelConcurrency": { 
+      "opencode-go/kimi-k2.5": 5,
+      "opencode-go/kimi-k2.5": 3,
+      "opencode/minimax-m2.7-free": 10
+    }
+  }
+}
