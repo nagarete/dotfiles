@@ -6,6 +6,15 @@
       "model": "opencode-go/kimi-k2.5",
       "ultrawork": { "model": "opencode-go/kimi-k2.5" }
     },
+
+    // Sisyphus-Junior: Focused task executor - MiniMax M2.7 for efficient execution
+    "sisyphus-junior": {
+      "model": "opencode-go/minimax-m2.7",
+      "fallback_models": [
+        "opencode-go/minimax-m2.5",
+        "opencode-go/kimi-k2.5"
+      ]
+    },
     "prometheus": { 
       "model": "opencode-go/kimi-k2.5"
     },
