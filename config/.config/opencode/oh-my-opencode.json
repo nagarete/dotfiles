@@ -1,199 +1,134 @@
 {
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
-
   "agents": {
-    // Sisyphus: Main orchestrator - Kimi K2.5 is Claude-like, best reasoning
     "sisyphus": {
-      "model": "opencode-go/kimi-k2.5",
-      "ultrawork": { "model": "opencode-go/kimi-k2.5" },
+      "model": "opencode-go/qwen3.6-plus",
+      "ultrawork": { "model": "opencode-go/qwen3.6-plus" },
       "fallback_models": [
-        "opencode-go/minimax-m2.7",
-        "opencode-go/minimax-m2.5"
+        "opencode-go/kimi-k2.5",
+        "opencode-go/minimax-m2.7"
       ]
     },
-
-    // Sisyphus-Junior: Focused task executor - MiniMax M2.7 for efficient execution
     "sisyphus-junior": {
-      "model": "opencode-go/minimax-m2.7",
+      "model": "opencode-go/qwen3.5-plus",
       "fallback_models": [
-        "opencode-go/minimax-m2.5",
-        "opencode-go/kimi-k2.5"
+        "opencode-go/minimax-m2.7",
+        "opencode-go/qwen3.6-plus"
       ]
     },
-
-    // Prometheus: Strategic planner - Kimi K2.5 for high-quality planning
     "prometheus": {
-      "model": "opencode-go/kimi-k2.5",
+      "model": "opencode-go/qwen3.6-plus",
       "fallback_models": [
-        "opencode-go/minimax-m2.7",
-        "opencode-go/minimax-m2.5"
+        "opencode-go/kimi-k2.5",
+        "opencode-go/minimax-m2.7"
       ]
     },
-
-    // Atlas: Todo orchestrator - MiniMax M2.7 for fast todo management
     "atlas": {
-      "model": "opencode-go/minimax-m2.7",
-      "fallback_models": [
-        "opencode-go/minimax-m2.5",
-        "opencode-go/kimi-k2.5"
-      ]
-    },
-
-
-    "hephaestus": {
-      "model": "opencode-go/minimax-m2.5",
-      "fallback_models": ["opencode-go/kimi-k2.5", "opencode-go/minimax-m2.7"]
-    },
-
-    // Metis: Plan review - Kimi K2.5 for thorough plan analysis
-    "metis": {
-      "model": "opencode-go/kimi-k2.5",
+      "model": "opencode-go/qwen3.5-plus",
       "fallback_models": [
         "opencode-go/minimax-m2.7",
         "opencode-go/minimax-m2.5"
       ]
     },
-
-    // Explore: Fast codebase grep - MiniMax M2.5 (cheapest, 20k req/5hr)
+    "hephaestus": {
+      "model": "opencode-go/qwen3.5-plus",
+      "fallback_models": ["opencode-go/minimax-m2.7", "opencode-go/minimax-m2.5"]
+    },
+    "metis": {
+      "model": "opencode-go/qwen3.6-plus",
+      "fallback_models": [
+        "opencode-go/kimi-k2.5",
+        "opencode-go/minimax-m2.7"
+      ]
+    },
     "explore": {
       "model": "opencode-go/minimax-m2.5",
       "fallback_models": [
-        "opencode-go/minimax-m2.7",
-        "opencode-go/kimi-k2.5"
+        "opencode-go/qwen3.5-plus",
+        "opencode-go/minimax-m2.7"
       ]
     },
-
-    // Librarian: Docs/code search - MiniMax M2.5 (fast, cheap retrieval)
     "librarian": {
       "model": "opencode-go/minimax-m2.5",
       "fallback_models": [
-        "opencode-go/minimax-m2.7",
-        "opencode-go/kimi-k2.5"
+        "opencode-go/qwen3.5-plus",
+        "opencode-go/minimax-m2.7"
       ]
     },
-
-    // Oracle: Architecture consultation - Kimi K2.5 for high-IQ reasoning
     "oracle": {
-      "model": "opencode-go/kimi-k2.5",
-      "fallback_models": [
-        "opencode-go/minimax-m2.7",
-        "opencode-go/minimax-m2.5"
-      ]
-    },
-
-    // Momus: Reviewer - Kimi K2.5 for thorough code review
-    "momus": {
-      "model": "opencode-go/minimax-m2.7",
+      "model": "opencode-go/qwen3.6-plus",
       "fallback_models": [
         "opencode-go/kimi-k2.5",
-        "opencode-go/minimax-m2.5"
+        "opencode-go/minimax-m2.7"
       ]
     },
-
-    // Multimodal Looker: Vision/screenshots - MiMo-V2-Omni HIGH for best image analysis
+    "momus": {
+      "model": "opencode-go/qwen3.5-plus",
+      "fallback_models": [
+        "opencode-go/minimax-m2.7",
+        "opencode-go/qwen3.6-plus"
+      ]
+    },
     "multimodal-looker": {
       "model": "opencode-go/mimo-v2-omni",
       "variant": "high",
       "fallback_models": [
-        "opencode-go/kimi-k2.5",
-        "opencode-go/minimax-m2.7"
+        "opencode-go/qwen3.6-plus",
+        "opencode-go/kimi-k2.5"
       ]
     }
   },
-
   "categories": {
-    // visual-engineering: Frontend/UI - MiMo-V2-Omni MEDIUM for visual tasks, Kimi fallback
     "visual-engineering": {
       "model": "opencode-go/mimo-v2-omni",
       "variant": "medium",
-      "fallback_models": [
-        "opencode-go/kimi-k2.5",
-        "opencode-go/minimax-m2.7"
-      ]
+      "fallback_models": ["opencode-go/qwen3.6-plus", "opencode-go/kimi-k2.5"]
     },
-
-    // artistry: Creative - MiMo-V2-Omni MEDIUM for creative visual work
     "artistry": {
       "model": "opencode-go/mimo-v2-omni",
       "variant": "medium",
-      "fallback_models": [
-        "opencode-go/kimi-k2.5",
-        "opencode-go/minimax-m2.7"
-      ]
+      "fallback_models": ["opencode-go/qwen3.6-plus", "opencode-go/kimi-k2.5"]
     },
-
-    // ultrabrain: Deep logic - Kimi K2.5 for complex reasoning
     "ultrabrain": {
-      "model": "opencode-go/kimi-k2.5",
-      "fallback_models": [
-        "opencode-go/minimax-m2.7",
-        "opencode-go/minimax-m2.5"
-      ]
+      "model": "opencode-go/qwen3.6-plus",
+      "fallback_models": ["opencode-go/kimi-k2.5", "opencode-go/qwen3.5-plus"]
     },
-
-    // deep: Autonomous research - minimax-m2.7 for thorough work
     "deep": {
-      "model": "opencode-go/minimax-m2.7",
-      "fallback_models": [
-        "opencode-go/minimax-m2.5",
-        "opencode-go/kimi-k2.5"
-      ]
+      "model": "opencode-go/qwen3.5-plus",
+      "fallback_models": ["opencode-go/minimax-m2.7", "opencode-go/qwen3.6-plus"]
     },
-
-    // quick: Trivial tasks - MiniMax M2.5 (cheapest, fastest)
     "quick": {
       "model": "opencode-go/minimax-m2.5",
-      "fallback_models": [
-        "opencode-go/minimax-m2.7",
-        "opencode-go/kimi-k2.5"
-      ]
+      "fallback_models": ["opencode-go/qwen3.5-plus", "opencode-go/minimax-m2.7"]
     },
-
-    // unspecified-low: Moderate tasks - MiniMax M2.7 for balance
     "unspecified-low": {
-      "model": "opencode-go/minimax-m2.7",
-      "fallback_models": [
-        "opencode-go/minimax-m2.5",
-        "opencode-go/kimi-k2.5"
-      ]
+      "model": "opencode-go/qwen3.5-plus",
+      "fallback_models": ["opencode-go/minimax-m2.7", "opencode-go/minimax-m2.5"]
     },
-
-    // unspecified-high: Complex work - Kimi K2.5 for heavy lifting
     "unspecified-high": {
-      "model": "opencode-go/kimi-k2.5",
-      "fallback_models": [
-        "opencode-go/minimax-m2.7",
-        "opencode-go/minimax-m2.5"
-      ]
+      "model": "opencode-go/qwen3.6-plus",
+      "fallback_models": ["opencode-go/kimi-k2.5", "opencode-go/qwen3.5-plus"]
     },
-
-    // writing: Documentation - MiniMax M2.5 (fast, cheap for prose)
     "writing": {
-      "model": "opencode-go/minimax-m2.5",
-      "fallback_models": [
-        "opencode-go/minimax-m2.7",
-        "opencode-go/kimi-k2.5"
-      ]
+      "model": "opencode-go/qwen3.5-plus",
+      "fallback_models": ["opencode-go/minimax-m2.5", "opencode-go/minimax-m2.7"]
     }
   },
-
   "background_task": {
-    // OpenCode Go has generous limits: $60/month
-    // MiniMax M2.5: 20k req/5hr | MiniMax M2.7: 14k req/5hr
-    // Kimi K2.5: 1,850 req/5hr | MiMo-V2-Omni: 2,150 req/5hr
     "providerConcurrency": {
       "opencode-go": 10
     },
     "modelConcurrency": {
       "opencode-go/minimax-m2.5": 20,
+      "opencode-go/qwen3.5-plus": 18,
       "opencode-go/minimax-m2.7": 15,
+      "opencode-go/qwen3.6-plus": 8,
       "opencode-go/kimi-k2.5": 5,
       "opencode-go/mimo-v2-omni": 3,
       "opencode-go/mimo-v2-omni(high)": 2,
       "opencode-go/mimo-v2-omni(medium)": 3
     }
   },
-
   "experimental": {
     "aggressive_truncation": true,
     "task_system": true
