@@ -49,6 +49,21 @@ install_ghostty() {
     fi
 }
 
+install_vicinae() {
+    if ! command -v vicinae &> /dev/null; then
+        echo "📦 Installing vicinae..."
+        if command -v yay &> /dev/null; then
+            yay -S --needed vicinae-bin
+        elif command -v paru &> /dev/null; then
+            paru -S --needed vicinae-bin
+        else
+            echo "⚠️  No AUR helper found (yay/paru). Please install vicinae-bin manually:"
+            echo "    git clone https://aur.archlinux.org/vicinae-bin.git"
+            echo "    cd vicinae-bin && makepkg -si"
+        fi
+    fi
+}
+
 backup_existing_configs() {
     mkdir -p ~/dotfiles_backup
     cp ~/.zshrc ~/dotfiles_backup/ 2>/dev/null || true
@@ -81,6 +96,7 @@ validate_hyprland() {
 install_zsh
 install_oh_my_zsh
 install_ghostty
+install_vicinae
 backup_existing_configs
 cleanup_existing_configs
 
