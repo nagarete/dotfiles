@@ -3,6 +3,6 @@
   "theme": "system",
   "autoupdate": false,
   "plugin": [
-    "oh-my-opencode@3.11.2"
+    "oh-my-openagent@4.0.0"
   ]
 }
