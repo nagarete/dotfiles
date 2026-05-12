@@ -107,6 +107,7 @@ alias vim="nvim"
 # alias dstow='stow --target ~/.config'
 alias yay="paru"
 alias python="python3"
+alias oc="opencode"
 alias snaplist="sudo snapper --config root list && sudo snapper --config home list"
 # alias svim="NVIM_APPNAME=svim nvim"
 
