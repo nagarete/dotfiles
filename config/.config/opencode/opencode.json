@@ -4,5 +4,8 @@
   "autoupdate": false,
   "plugin": [
     "oh-my-openagent@4.0.0"
-  ]
+  ],
+  "websearch": {
+    "provider": "random"
+  }
 }
