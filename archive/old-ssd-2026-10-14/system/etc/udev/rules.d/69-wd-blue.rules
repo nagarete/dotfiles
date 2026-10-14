@@ -1,0 +1,1 @@
+ACTION=="add|change", KERNEL=="sd[a-z]", ATTRS{model}=="WDC WD20*", RUN+="/usr/bin/hdparm -B 255 -S 0 /dev/%k"

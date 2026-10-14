@@ -1,3 +1,11 @@
 # Don't track these
 .DS_Store
 *.log
+
+# Local agent sessions and credentials are not portable configuration.
+.omo/
+.sisyphus/
+config/.config/opencode/service.json
+config/.config/opencode/tasks/
+config/.config/opencode/oh-my-openagent/native-nudge.json
+archive/old-ssd-2026-10-14/home/.config-backup-20260321/hypr/nohup.out

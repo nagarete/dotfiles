@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+exec "$HOME/models/heretic-bonsai2-27b/serve-heretic.sh" "$@"

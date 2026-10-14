@@ -1,0 +1,2 @@
+where ollama models: /usr/share/ollama/.ollama/models
+history: ~/ollama/history

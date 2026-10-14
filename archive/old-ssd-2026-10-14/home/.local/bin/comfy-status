@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# Report local ComfyUI status: process, endpoint, GPU memory, model files.
+set -uo pipefail
+
+COMFY_DIR="$HOME/AI/image/ComfyUI"
+LOG_DIR="$HOME/AI/image/benchmarks"
+PID_FILE="$LOG_DIR/comfy.pid"
+HOST="127.0.0.1"
+PORT="8188"
+SS="$COMFY_DIR/models"
+
+state="stopped"
+pid=""
+if [ -f "$PID_FILE" ] && kill -0 "$(cat "$PID_FILE")" 2>/dev/null; then
+  state="running"
+  pid=$(cat "$PID_FILE")
+elif pgrep -f "$COMFY_DIR/.venv/bin/python main.py" >/dev/null 2>&1; then
+  state="running (pid file stale)"
+  pid=$(pgrep -f "$COMFY_DIR/.venv/bin/python main.py" | head -1)
+fi
+
+echo "ComfyUI:   $state${pid:+ (pid $pid)}"
+echo "Endpoint:  http://$HOST:$PORT  $(curl -sf -o /dev/null "http://$HOST:$PORT/" && echo reachable || echo unreachable)"
+echo "GPU:       $(nvidia-smi --query-gpu=name,memory.used,memory.total --format=csv,noheader 2>/dev/null)"
+echo
+
+echo "Models:"
+for f in "$SS/diffusion_models/qwen-image-2.1-Q6_K.gguf" \
+         "$SS/text_encoders/qwen3vl_8b_int8_convrot.safetensors" \
+         "$SS/vae/qwen_image_2.1_vae_bf16.safetensors"; do
+  if [ -f "$f" ]; then
+    printf "  ok   %12s  %s\n" "$(numfmt --to=iec "$(stat -c%s "$f")")" "${f#$SS/}"
+  else
+    printf "  MISSING              %s\n" "${f#$SS/}"
+  fi
+done
+echo
+
+echo "Last log lines ($LOG_DIR/comfyui.log):"
+tail -n 5 "$LOG_DIR/comfyui.log" 2>/dev/null || echo "  (no log)"

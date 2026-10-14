@@ -1,0 +1,12 @@
+[Unit]
+Description=Keep WD HDD heads loaded to prevent clicking
+After=local-fs.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c 'while true; do dd if=/dev/sda of=/dev/null bs=512 count=1 iflag=direct 2>/dev/null; sleep 30; done'
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

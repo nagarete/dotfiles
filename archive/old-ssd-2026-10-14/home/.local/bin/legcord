@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Use Legcord's packaged launcher so its Electron flags are managed in one place.
+exec /usr/bin/legcord "$@"

@@ -108,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 alias yay="paru"
 alias python="python3"
 alias oc="opencode"
+alias oc2="opencode2"
 alias snaplist="sudo snapper --config root list && sudo snapper --config home list"
 # alias svim="NVIM_APPNAME=svim nvim"
 
@@ -125,3 +126,12 @@ compdef _files uv=run
 eval "$(zoxide init zsh --cmd cd)"
 
 
+
+# opencode
+export PATH=/home/nagarete/.opencode/bin:$PATH
+
+. "$HOME/.local/share/../bin/env"
+
+# >>> Codex installer >>>
+export PATH="/home/nagarete/.local/bin:$PATH"
+# <<< Codex installer <<<

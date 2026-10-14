@@ -1,0 +1,3 @@
+# Disable APM (Advanced Power Management) on WD drives to prevent spin-down
+# This rule runs when the drive is detected
+ACTION=="add|change", SUBSYSTEM=="block", KERNEL=="sda", RUN+="/usr/bin/hdparm -B 255 /dev/sda"

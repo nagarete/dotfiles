@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Match T3 Code: let the compositor handle DPI and render natively via Wayland.
+# This Chromium build requires Vulkan to be disabled when using Wayland.
+exec /usr/bin/chatgpt \
+  --ozone-platform=wayland \
+  --disable-gpu \
+  "$@"

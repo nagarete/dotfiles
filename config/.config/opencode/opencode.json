@@ -3,9 +3,30 @@
   "theme": "system",
   "autoupdate": false,
   "plugin": [
-    "oh-my-openagent@4.0.0"
+    "oh-my-openagent@beta"
   ],
   "websearch": {
     "provider": "random"
+  },
+  "provider": {
+    "bonsai": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Bonsai 2 (local)",
+      "options": {
+        "baseURL": "http://127.0.0.1:8899/v1",
+        "apiKey": "bonsai-local"
+      },
+      "models": {
+        "bonsai2": {
+          "name": "Bonsai 2 27B (local, MTP)",
+          "tool_call": true,
+          "temperature": true,
+          "limit": {
+            "context": 131072,
+            "output": 16384
+          }
+        }
+      }
+    }
   }
 }

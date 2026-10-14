@@ -1,0 +1,5 @@
+-- Window placement rules (ported from windows.conf).
+o.window("(zen)", { workspace = "1" })
+o.window("(chrome-work)", { workspace = "2" })
+o.window("(chrome-personal)", { workspace = "2" })
+o.window("(legcord)", { workspace = "3" })

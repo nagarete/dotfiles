@@ -1,0 +1,12 @@
+[Unit]
+Description=Prevent WD20EZBX spindown
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/bin/sh -c 'while true; do /sbin/hdparm -a /dev/sda > /dev/null 2>&1; sleep 50; done'
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

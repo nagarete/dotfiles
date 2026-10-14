@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+# Start local ComfyUI (Qwen-Image-2.1 GGUF stack). Localhost only, no autostart.
+set -euo pipefail
+
+COMFY_DIR="$HOME/AI/image/ComfyUI"
+LOG_DIR="$HOME/AI/image/benchmarks"
+PID_FILE="$LOG_DIR/comfy.pid"
+LOG_FILE="$LOG_DIR/comfyui.log"
+HOST="127.0.0.1"
+PORT="8188"
+
+if [ -f "$PID_FILE" ]; then
+  OLD=$(cat "$PID_FILE")
+  if kill -0 "$OLD" 2>/dev/null; then
+    echo "ComfyUI already running (pid $OLD) -> http://$HOST:$PORT"
+    exit 0
+  fi
+  rm -f "$PID_FILE"
+fi
+
+if [ ! -x "$COMFY_DIR/.venv/bin/python" ]; then
+  echo "venv missing: $COMFY_DIR/.venv/bin/python" >&2
+  exit 1
+fi
+
+mkdir -p "$LOG_DIR"
+cd "$COMFY_DIR"
+# APPDIR/APPIMAGE are exported by the host desktop app and make the bundled
+# CPython report the wrong sys.executable; unset them for a clean interpreter.
+nohup env -u APPDIR -u APPIMAGE -u ARGV0 \
+  "$COMFY_DIR/.venv/bin/python" main.py --listen "$HOST" --port "$PORT" \
+  --input-directory "$HOME/AI/image/input" \
+  --output-directory "$HOME/AI/image/output" \
+  >> "$LOG_FILE" 2>&1 &
+PID=$!
+echo "$PID" > "$PID_FILE"
+
+for _ in $(seq 1 60); do
+  if curl -sf -o /dev/null "http://$HOST:$PORT/"; then
+    echo "ComfyUI started (pid $PID) -> http://$HOST:$PORT"
+    exit 0
+  fi
+  kill -0 "$PID" 2>/dev/null || { echo "ComfyUI died during startup; see $LOG_FILE" >&2; exit 1; }
+  sleep 1
+done
+echo "ComfyUI pid $PID did not answer on http://$HOST:$PORT within 60s; see $LOG_FILE" >&2
+exit 1

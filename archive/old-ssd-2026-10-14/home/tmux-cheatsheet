@@ -1,0 +1,33 @@
+session -> window -> pane
+
+list available sessions:
+tmux ls
+
+immediately go to any session:
+tmux a -t [number]
+
+rename session:
+c-b $
+
+detatch / quit tmux / quit session:
+c-b d
+
+new window:
+c-b c
+
+rename window:
+c-b ,
+
+split pane:
+c-b " horizontal
+c-b % vertical
+
+switch pane:
+c-b arrow keys
+c-b q [number]
+
+resize pane:
+hold c-b arrow keys
+
+move around all sessions and windows
+c-b w

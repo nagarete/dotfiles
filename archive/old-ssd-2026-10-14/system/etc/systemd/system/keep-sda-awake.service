@@ -1,0 +1,9 @@
+[Unit]
+Description=Prevent /dev/sda from spinning down
+
+[Service]
+ExecStart=/usr/local/bin/keep_sda_awake.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

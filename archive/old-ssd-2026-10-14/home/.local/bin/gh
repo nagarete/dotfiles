@@ -1,0 +1,6 @@
+#!/bin/bash
+export MISE_MINIMUM_RELEASE_AGE=0
+# Keep setup output off stdout: callers such as source-control providers parse
+# `gh --json` output directly and require stdout to contain JSON only.
+mise use -g "gh" >/dev/null || exit 1
+exec mise x "gh" -- "gh" "$@"

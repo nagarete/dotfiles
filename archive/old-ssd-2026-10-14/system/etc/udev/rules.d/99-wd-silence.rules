@@ -1,0 +1,4 @@
+# Disable aggressive power management on WD drives
+ACTION=="add|change", SUBSYSTEM=="block", ATTRS{model}=="WDC WD*", ATTR{queue/scheduler}="none"
+ACTION=="add|change", SUBSYSTEM=="block", ATTRS{model}=="WDC WD*", RUN+="/sbin/hdparm -S 0 /dev/%k"
+ACTION=="add|change", SUBSYSTEM=="block", ATTRS{model}=="WDC WD*", RUN+="/sbin/hdparm -B 255 /dev/%k"

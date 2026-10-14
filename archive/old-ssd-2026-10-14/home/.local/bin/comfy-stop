@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+# Stop local ComfyUI cleanly (SIGTERM, then verify GPU memory is released).
+set -uo pipefail
+
+PID_FILE="$HOME/AI/image/benchmarks/comfy.pid"
+
+vram_used() {
+  nvidia-smi --query-gpu=memory.used --format=csv,noheader,nounits 2>/dev/null | head -1
+}
+
+if [ ! -f "$PID_FILE" ]; then
+  echo "ComfyUI not running (no pid file)"
+  exit 0
+fi
+
+PID=$(cat "$PID_FILE")
+if ! kill -0 "$PID" 2>/dev/null; then
+  echo "ComfyUI not running (stale pid $PID)"
+  rm -f "$PID_FILE"
+  exit 0
+fi
+
+echo "stopping ComfyUI (pid $PID)..."
+kill -TERM "$PID"
+for _ in $(seq 1 30); do
+  if ! kill -0 "$PID" 2>/dev/null; then
+    rm -f "$PID_FILE"
+    echo "ComfyUI stopped. GPU memory used now: $(vram_used) MiB"
+    exit 0
+  fi
+  sleep 1
+done
+
+echo "no clean exit after 30s; sending SIGKILL"
+kill -KILL "$PID" 2>/dev/null
+rm -f "$PID_FILE"
+echo "ComfyUI killed. GPU memory used now: $(vram_used) MiB"

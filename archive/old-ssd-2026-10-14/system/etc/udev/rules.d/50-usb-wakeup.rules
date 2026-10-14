@@ -1,0 +1,2 @@
+# Disable wakeup for ASRock LED Controller to prevent suspend issues
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="26ce", ATTR{idProduct}=="01a2", ATTR{power/wakeup}="disabled"

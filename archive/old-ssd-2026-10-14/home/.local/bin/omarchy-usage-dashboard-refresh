@@ -1,0 +1,2 @@
+#!/bin/bash
+exec /home/nagarete/.local/share/omarchy-usage-dashboard/app/refresh.sh "$@"

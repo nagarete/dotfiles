@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# User-local Ardour 9.8 launcher with the startup SIGFPE guard.
+export GTK2_RC_FILES=/dev/null
+export GTK_PATH="/etc/ardour9:/usr/lib/ardour9${GTK_PATH:+:$GTK_PATH}"
+export LD_LIBRARY_PATH="/usr/lib/ardour9${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export ARDOUR_DATA_PATH=/usr/share/ardour9
+export ARDOUR_CONFIG_PATH=/etc/ardour9
+export ARDOUR_DLL_PATH=/usr/lib/ardour9
+export ARDOUR_SELF=ardour9
+export UBUNTU_MENUPROXY=""
+export VAMP_PATH="/usr/lib/ardour9/vamp${VAMP_PATH:+:$VAMP_PATH}"
+
+if [ -x /usr/lib/ardour9/ardour-9.8.0 ]; then
+  exec /home/nagarete/.local/lib/ardour9/ardour-9.8.0-patched "$@"
+fi
+
+# Stop shadowing the distribution launcher automatically after Ardour upgrades.
+exec /usr/bin/ardour9 "$@"

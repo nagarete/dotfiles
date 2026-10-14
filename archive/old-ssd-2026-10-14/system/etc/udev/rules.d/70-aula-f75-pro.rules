@@ -1,0 +1,2 @@
+# Allow the active desktop user to access the AULA F75 Pro configuration interfaces.
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="258a", ATTRS{idProduct}=="010c", MODE="0660", TAG+="uaccess"

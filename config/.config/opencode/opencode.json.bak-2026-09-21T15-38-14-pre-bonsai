@@ -1,0 +1,11 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "theme": "system",
+  "autoupdate": false,
+  "plugin": [
+    "oh-my-openagent@beta"
+  ],
+  "websearch": {
+    "provider": "random"
+  }
+}

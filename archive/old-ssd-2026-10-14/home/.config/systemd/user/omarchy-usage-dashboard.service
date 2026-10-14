@@ -1,0 +1,5 @@
+[Unit]
+Description=Refresh AI Usage Dashboard
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 "/home/nagarete/.local/share/omarchy-usage-dashboard/app/collector.py" scan
