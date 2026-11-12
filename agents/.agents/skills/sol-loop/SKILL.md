@@ -52,9 +52,10 @@ missing or pre-failing checks in the brief.
 ## 2. Start the reviewer
 
 The reviewer is **Claude Fable 5.2** (`claude-fable-5-2`) at effort `low`,
-or `medium` for a round extended under the security / data-loss / concurrency
-rule. (Per `choosing-claude-models`, Fable at `low` scores above Opus at
-`high` and costs less.) Use a different model if the user names one.
+or `high` for a round extended under the security / data-loss / concurrency
+rule. Skip `medium`: on Artificial Analysis (2026-11) it adds 2 points over
+`low` for 23% more cost, while `high` adds 8. (Per `choosing-claude-models`,
+Fable at `low` scores above Opus at `high` and costs less.) Use a different model if the user names one.
 
 In T3, call `orchestrator_capabilities` and confirm the Fable ID on your own
 Claude provider instance (`inheritedProviderInstanceId`). Record provider,

@@ -14,18 +14,26 @@ relevant checks. Give council the updated implementation; do not defer known
 fixes until reviews return. If the user wants to discard the implementation
 and explore new ideas, skip fixes to code being replaced.
 
-Bring in three delegates to help with the user's request, usually for review
-or feedback. The user has only an Anthropic (Claude) subscription, so the
-council is three different Claude models, which gives three independent
-opinions. If the user's instructions name council members, use those.
-Otherwise the council is exactly these three:
+Bring in two delegates to help with the user's request, usually for review
+or feedback. The user has only an Anthropic (Claude) subscription. Two Claude
+models share more blind spots than models from two providers, so the council
+gets its spread from giving each delegate a different lens rather than from
+more seats. If the user's instructions name council members, use those.
+Otherwise the council is exactly these two:
 
-- **Claude Fable 5.2** (`claude-fable-5-2`), effort `medium`.
-- **Claude Opus 5.5** (`claude-opus-5-5`), effort `medium`.
-- **Claude Sonnet 5.5** (`claude-sonnet-5-5`), effort `high`.
+- **Claude Fable 5.2** (`claude-fable-5-2`), effort `low`. Lens:
+  correctness. Bugs, broken callers, and edge cases in the intended use.
+- **Claude Sonnet 5.5** (`claude-sonnet-5-5`), effort `high`. Lens: intent
+  and scope. Does the change do what was asked, is anything unneeded, would a
+  reader follow it.
 
-(Efforts follow the `choosing-claude-models` skill: Opus skips `high`, and
-Sonnet goes up to `high` before moving up a model.)
+For security, permissions, auth, data loss, or state/concurrency changes,
+raise Fable to `high`. Never raise Sonnet past `high`: on Artificial Analysis
+(2026-11), Sonnet `xhigh` and `max` cost more than Fable `low` and score below
+it. Skip Fable `medium`: it adds little over `low` for more cost. Opus is left
+out because it usually wrote the code under review.
+
+Put the lens in each delegate's brief, but let either report any real bug.
 
 Never use non-Anthropic models, and never reach a Claude model through
 another provider (OpenCode, Bedrock, Cursor, and so on), even when it lists
@@ -56,7 +64,6 @@ Rounds: 2
 | Delegate | Round 1 | Round 2 |
 | --- | --- | --- |
 | Claude Fable 5.2 | 8/10 | 10/10 |
-| Claude Opus 5.5 | 7/10 | 9/10 |
 | Claude Sonnet 5.5 | 7/10 | 9/10 |
 ```
 

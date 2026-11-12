@@ -52,8 +52,8 @@ So these three are edited (each file has a header comment saying so):
 
 | Skill | Upstream | Ours (Claude only) |
 | --- | --- | --- |
-| `sol-loop` | Reviewer: GPT Sol on Codex | Reviewer: Claude Fable 5.2 at `low` (`medium` for security / data-loss / concurrency rounds). Name kept so "sol loop" and `full-send` still work. |
-| `council` | GPT-6.1 Sol + GPT-6 Astra + Claude Fable 5.2, matched to Personal/Work accounts | Claude Fable 5.2 (`medium`) + Opus 5.5 (`medium`) + Sonnet 5.5 (`high`), on the session's own Claude instance |
+| `sol-loop` | Reviewer: GPT Sol on Codex | Reviewer: Claude Fable 5.2 at `low` (`high` for security / data-loss / concurrency rounds). Name kept so "sol loop" and `full-send` still work. |
+| `council` | Three reviewers: GPT-6.1 Sol + GPT-6 Astra + Claude Fable 5.2, matched to Personal/Work accounts | Two reviewers with different lenses: Fable 5.2 `low` (correctness; `high` for risky changes) + Sonnet 5.5 `high` (intent and scope), on the session's own Claude instance |
 | `orchestrate` | Every implementer on Opus 5.5 at `high` | Model and effort per checkpoint from `choosing-claude-models` (default Opus 5.5 `medium`, Sonnet for small scoped work, Fable 5.2 `low` for big work; never Opus `high`) |
 
 The `orchestrate` change is not about Codex. Upstream hardcodes Opus at `high`,
@@ -61,13 +61,39 @@ but `choosing-claude-models` says to skip that and use Fable 5.2 at `low`
 instead (scores higher, costs less, runs faster), and to pick the model by how
 hard each checkpoint is. One rule for model choice everywhere.
 
-The efforts follow `choosing-claude-models` too: Opus skips `high`, and Sonnet
-goes up to `high` before moving up a model.
+### Why two council seats, and these efforts
+
+Upstream's three seats paid off because two came from another provider, and
+models from different providers miss different things. Three Claude models
+share more blind spots, so a third seat cost more than it found. Instead the
+two seats get different lenses. Opus is left out because it usually wrote the
+code under review (it is the default in `choosing-claude-models`).
+
+Efforts come from the [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models)
+Intelligence Index (v5.0.1, checked 2026-11-12). It is a general score, not a
+code-review benchmark, so treat it as a guide:
+
+| Variant | Index | Cost per task | Time per task |
+| --- | --- | --- | --- |
+| Fable 5.2 low | 54 | $3.10 | 6.2 min |
+| Fable 5.2 medium | 56 | $3.80 | 7.8 min |
+| Fable 5.2 high | 62 | $9.08 | 16.6 min |
+| Sonnet 5.5 high | 42 | $1.64 | 7.0 min |
+| Sonnet 5.5 xhigh | 50 | $4.09 | 14.7 min |
+| Sonnet 5.5 max | 55 | $10.02 | 32.6 min |
+
+- Fable `low` over `medium`: +2 points for +23% cost. Jump to `high` (+8) when
+  a change needs a deeper look.
+- Sonnet stays at `high`: `xhigh` and `max` cost more than Fable `low` and
+  score below it. Its lens (intent, scope) doesn't need a top score.
+
+Re-check these numbers when new models ship.
 
 ### If we get a Codex subscription
 
 Switch `sol-loop` and `council` back to upstream, which uses GPT reviewers.
-A second provider catches mistakes a same-family reviewer tends to share.
+A second provider catches mistakes a same-family reviewer tends to share,
+which is also why upstream's three-seat council is worth its cost there.
 
 1. Restore the originals, which are saved untouched in `upstream/narasaka-skills/`:
 
