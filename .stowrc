@@ -4,3 +4,4 @@
 --ignore=.gitignore
 --ignore=README.md
 --ignore=install.sh
+--ignore=upstream

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Leaving PR Comments"
+  short_description: "Write GitHub PR comments in my voice"
+  default_prompt: "Use $leaving-pr-comments when posting this comment on my behalf."
