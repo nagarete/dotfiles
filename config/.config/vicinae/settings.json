@@ -1,0 +1,53 @@
+// This configuration is merged with the default vicinae configuration file, which you can obtain by running the `vicinae config default` command.
+// Every item defined in this file takes precedence over the values defined in the default config or any other imported file.
+//
+// You can make manual edits to this file, however you should keep in mind that this file may be written to by vicinae when a configuration change is made through the GUI.
+// When that happens, any custom comments or formatting will be lost.
+//
+// If you want to maintain a configuration file with your own comments and formatting, you should create a separate file and add it to the 'imports' array.
+//
+// Learn more about configuration at https://docs.vicinae.com/config
+
+{
+   "$schema": "https://vicinae.com/schemas/config.json",
+   "global_shortcuts": {
+      "toggle": ""
+   },
+   "providers": {
+      "applications": {
+         "enabled": true,
+         "entrypoints": {
+            "org.gnome.Nautilus": {
+               "enabled": true
+            }
+         }
+      },
+      "files": {
+         "preferences": {
+            "autoIndexing": false,
+            "excludedIndexingPaths": [
+               "/home/nagarete-arch-5/.config",
+               "/home/nagarete-arch-5/.local",
+               "/home/nagarete-arch-5/.cache",
+               "/home/nagarete-arch-5/.hermes",
+               "/home/nagarete-arch-5/.t3",
+               "/home/nagarete-arch-5/android-sdk",
+               "/home/nagarete-arch-5/.codex",
+               "/home/nagarete-arch-5/.claude",
+               "/home/nagarete-arch-5/.oh-my-zsh",
+               "/home/nagarete-arch-5/.agent-browser",
+               "/home/nagarete-arch-5/.dsh",
+               "/home/nagarete-arch-5/.agents",
+               "/home/nagarete-arch-5/.copilot",
+               "/home/nagarete-arch-5/.pi",
+               "/home/nagarete-arch-5/.triton",
+               "/home/nagarete-arch-5/.npm",
+               "/home/nagarete-arch-5/.bun",
+               "/home/nagarete-arch-5/.gradle",
+               "/home/nagarete-arch-5/.android",
+               "/home/nagarete-arch-5/.mozilla"
+            ]
+         }
+      }
+   }
+}

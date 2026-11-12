@@ -37,3 +37,14 @@ o.bind("SUPER + SHIFT + j", "Swap window down", hl.dsp.window.swap({ direction =
 hl.unbind("SUPER + SHIFT + W")
 o.bind("SUPER + SHIFT + W", "Typora", { launch = "typora --enable-wayland-ime" })
 
+-- Use Omasnap for capture and annotation.
+-- PRINT was already bound to Screenshot by the Omarchy defaults.
+hl.unbind("PRINT")
+o.bind("PRINT", "Screenshot", "/usr/bin/omasnap")
+
+-- Hex Linux shortcuts, delivered through the GlobalShortcuts portal.
+-- On Hyprland 0.56, release Space before Alt in Hold mode.
+-- Keep cancel unassigned so Escape remains available to applications.
+o.bind("ALT + SPACE", "Hex dictation", hl.dsp.global("hex:dictation"))
+o.bind("CTRL + ALT + V", "Hex paste last dictation", hl.dsp.global("hex:paste-last"))
+o.bind("F9", "Hex Annotate", hl.dsp.global("hex:capture"))

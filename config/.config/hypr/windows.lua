@@ -1,7 +1,11 @@
 -- Window placement rules (ported from windows.conf).
-o.window("(zen)", { workspace = "1" })
-o.window("(chrome-work)", { workspace = "2" })
-o.window("(chrome-personal)", { workspace = "2" })
+-- o.window("(zen)", { workspace = "1" })
+-- o.window("(chrome-work)", { workspace = "2" })
+-- o.window("(chrome-personal)", { workspace = "2" })
+-- Restored Home windows retain their old titles. Work window names override this default.
+o.window("^helium.*$", { workspace = "1" })
+o.window({ class = "^helium.*$", initial_title = "^helium-aurum$" }, { workspace = "2" })
+o.window({ class = "^helium.*$", initial_title = "^helium-gallant$" }, { workspace = "2" })
 o.window("(legcord)", { workspace = "3" })
 o.window("^com\\.t3tools\\.T3Code$", { workspace = "4" })
 

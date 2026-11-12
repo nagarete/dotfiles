@@ -14,7 +14,7 @@
       "name": "Bonsai 2 (local)",
       "options": {
         "baseURL": "http://127.0.0.1:8899/v1",
-        "apiKey": "bonsai-local"
+        "apiKey": "local"
       },
       "models": {
         "bonsai2": {
@@ -26,6 +26,21 @@
             "output": 16384
           }
         }
+      }
+    }
+  },
+  "mcp": {
+    "rea": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "rea-agents@6.7.0",
+        "mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "HOPPER_LAUNCHER_PATH": "/opt/hopper/bin/Hopper"
       }
     }
   }
